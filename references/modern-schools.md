@@ -1,30 +1,33 @@
-# Modern Bazi Schools
+# Comprehensive Modern Bazi Schools Documentation
 
-## Overview
-This document provides comprehensive information about various modern Bazi schools, their differences, and the methodology used in this project. Bazi, also known as the Four Pillars of Destiny, is a complex system rooted in Chinese metaphysics, utilized to analyze an individual's destiny based on their birth date and time. 
+## Xu's Five-Element School
+- **Overview**: This school emphasizes the interaction of the five elements (Wood, Fire, Earth, Metal, Water) in analyzing Bazi.
+- **Methodology**: Utilizes a dynamic model to interpret the interactions and balance of elements in a person's Bazi chart.
+- **Core Analysis Methods**: Focus on element strength and fluidity.
 
-## Major Modern Bazi Schools
+## Li Hanchen's School
+- **Overview**: Known for a more systematic approach integrating astronomy and traditional Chinese philosophy.
+- **Methodology**: Emphasizes the timing of birth and its cosmic interactions with Earth.
+- **Core Analysis Methods**: Includes time-based predictive elements alongside traditional Bazi readings.
 
-### 1. Traditional Bazi School
-- **Principles:** Focuses on classic texts and teachings 
-- **Methodology:** Emphasis on elements, heavenly stems, and earthly branches.
-- **Differences:** More rigid interpretations of destiny and less adaptation to modern scenarios.
+## Hong Kong-Taiwan School
+- **Overview**: A blend of traditional Bazi and modern psychological interpretations.
+- **Methodology**: Applies a more social context to interpretation, considering modern lifestyles.
+- **Core Analysis Methods**: Integrates psychological profiling with traditional Bazi readings.
 
-### 2. Contemporary Bazi School
-- **Principles:** Incorporates modern psychology and self-help strategies 
-- **Methodology:** Blends traditional Bazi with contemporary practices, catering to personal growth and emotional well-being.
-- **Differences:** Offers flexible interpretations and applications for personal development.
+## Contemporary Schools
+- **Overview**: Focuses on adaptability and practicality in modern contexts.
+- **Methodology**: Uses technology for analysis—such as software that calculates Bazi charts and provides interpretations in real-time.
+- **Core Analysis Methods**: Employs case studies and empirical evidence to support interpretations.
 
-### 3. Bazi in Feng Shui
-- **Principles:** Integrates Bazi with Feng Shui principles for holistic analysis 
-- **Methodology:** Evaluates how environmental energies affect individual destinies.
-- **Differences:** Focused on the relationship between environment and personal destiny.
+## Practical Comparison Tables
+| School                  | Core Focus                           | Methodology                                           | Analysis Methods                           |
+|------------------------|-------------------------------------|------------------------------------------------------|-------------------------------------------|
+| Xu's Five-Element      | Element interactions                | Dynamic interpretation of elements                    | Element strength, balance                 |
+| Li Hanchen             | Cosmic interactions                 | Integrating astronomy with Bazi                      | Time-based predictions                     |
+| Hong Kong-Taiwan      | Social context                      | Psychological interpretations alongside Bazi         | Psychological profiling                    |
+| Contemporary Schools   | Practical application               | Tech-driven real-time analysis                        | Case studies, empirical methods            |  
 
-## Methodology of This Project
-The project employs a systematic approach to document the methodologies and differences among these schools:
-1. **Research and Literature Review:** Extensive review of scholarly articles and books on Bazi.
-2. **Interviews and Data Collection:** Gathering insights from practitioners of various schools to understand practical applications.
-3. **Comparative Analysis:** Evaluating the methodologies and defining characteristics of each Bazi school.
+---
 
-## Conclusion
-This document aims to serve as a resource for individuals interested in understanding modern Bazi schools and their methodologies, encouraging informed choices in personal destiny analysis.
+This documentation provides a structured comparison of modern Bazi schools, outlining unique methodologies, theoretical foundations, and practical applications for today's practitioners.
