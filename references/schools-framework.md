@@ -1,29 +1,73 @@
-# Comprehensive Bazi School Framework
+# 八字命理多流派框架
 
-## Introduction
-The Bazi School Framework is a structured approach for understanding and interpreting the Bazi or Four Pillars of Destiny, an ancient Chinese divination system based on the time of birth. This framework is designed to guide practitioners in their study and application of Bazi principles.
+## 概述
 
-## Key Components
-1. **The Four Pillars**: The core of Bazi consists of Year, Month, Day, and Hour pillars. Each pillar is made up of a Heavenly Stem and an Earthly Branch.
-   - **Heavenly Stems**: There are 10 stems that rotate in a cycle.
-   - **Earthly Branches**: There are 12 branches that correspond to the Chinese zodiac.
+本项目支持六大现代八字分析流派，融合传统理论与当代应用。
 
-2. **Five Elements**: Understanding the balance of Wood, Fire, Earth, Metal, and Water within the Bazi chart is crucial. Each element interacts with the others in complex ways.
+## 六大流派概览
 
-3. **Interactions**: Focus on the interactions between the elements:
-   - Generating (e.g., Wood generates Fire)
-   - Controlling (e.g., Water controls Fire)
-   - Overcoming (e.g., Metal overcomes Wood)
+### 1. 经典派 🏛️
+**核心**：基于九本传统典籍
+**理论基础**：穷通宝典、子平真诠等
+**分析重点**：格局、用神、大运
+**适合**：传统爱好者、专业学员
 
-4. **Luck Cycles**: Bazi incorporates the concept of luck cycles, which are 10-year periods that influence a person's life. Analyzing these cycles helps in predicting changes in fortune.
+### 2. 徐五行学派 🌿
+**核心**：五行平衡论
+**理论基础**：五行生克、调理论
+**分析重点**：五行平衡度、调理建议
+**适合**：养生健康人群
 
-5. **Fate vs. Free Will**: This framework emphasizes the balance between destiny (influenced by Bazi) and personal choices. Practitioners are encouraged to take proactive steps in alignment with their destiny.
+### 3. 李涵琛学派 💭
+**核心**：心理格局论
+**理论基础**：命理+心理学
+**分析重点**：性格、心理成长
+**适合**：自我认知需求者
 
-## Applications
-- **Personal Development**: Using Bazi for self-awareness and personal growth.
-- **Relationship Compatibility**: Analyzing compatibility between individuals based on their Bazi.
-- **Career Guidance**: Providing insights on suitable career paths based on Bazi analysis.
-- **Health and Well-being**: Offering advice on health matters by interpreting the Bazi chart.
+### 4. 香港-台湾学派 🎯
+**核心**：实用预测论
+**理论基础**：大运流年实战
+**分析重点**：运势走向、决策指导
+**适合**：决策需求者
 
-## Conclusion
-The Bazi School Framework is a comprehensive guide for practitioners looking to deepen their understanding of Bazi and its applications in various life aspects.
+### 5. 心理学基础学派 🧠
+**核心**：命理心理映射
+**理论基础**：心理学+命理
+**分析重点**：心理状态、心理保健
+**适合**：压力疏导需求者
+
+### 6. 混合分析派 🔄
+**核心**：综合多流派优点
+**理论基础**：流派融合
+**分析重点**：360°全面诊断
+**适合**：深度理解需求者
+
+## 流派选择决策树
+
+你的需求是什么？
+- 了解人生大方向 → 经典派
+- 改善身体生活质量 → 徐五行派
+- 提升自我认知 → 李涵琛派
+- 快速决策指导 → 港台派
+- 心理疏导支持 → 心理派
+- 全面深度分析 → 混合派
+
+## 各流派对比
+
+| 维度 | 经典派 | 徐五行派 | 李涵琛派 | 港台派 | 心理派 |
+|------|--------|----------|----------|--------|--------|
+| 理论深度 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| 实用性 | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| 预测准确度 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
+| 心理指导 | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐⭐ |
+
+## 应用场景指导
+
+| 场景 | 推荐流派 | 原因 |
+|------|---------|------|
+| 学习研究 | 经典派 | 理论体系完整 |
+| 养生保健 | 徐五行派 | 调理建议具体 |
+| 性格测试 | 李涵琛派 | 心理分析深入 |
+| 近期运势 | 港台派 | 预测实用准确 |
+| 心理困扰 | 心理派 | 心理指导专业 |
+| 全面了解 | 混合派 | 多角度综合 |
