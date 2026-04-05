@@ -1,19 +1,52 @@
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)
-![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green)
-
 # 赛博算命 Skill
 
-基于 Claude Code 的八字排盘与命理分析工具。通过交互式对话收集出生信息，排出四柱八字，参照九本经典命理典籍进行专业分析。
 
-## 功能
+基于 Claude Code 的八字���盘与命理分析工具。
 
-- **信息收集** — 逐步收集姓名、阳历/农历生日、出生时辰、性别、出生地等信息
-- **排盘计算** — 自动排出年柱、月柱、日柱、时柱，计算大运与流年
-- **综合分析** — 日主强弱、十神关系、五行平衡、格局判定、大运流年解读
+## ✨ 核心功能
 
-## 项目结构
+- **信息收集** — 逐步收集出生信息
+- **排盘计算** — 自动排出四柱
+- **多流派分析** — 支持6种分析方法
+- **综合诊断** — 日主强弱、十神关系等
 
-## 免责声明
+## 🚀 快速开始
 
-本 Skill 仅供传统文化学习与娱乐参考，分析结果不构成任何决策依据。
+### 安装
+
+```bash
+mkdir -p .claude/skills
+git clone https://github.com/fckcg/bazi-skill .claude/skills/bazi
+```
+
+### 使用
+
+在 Claude Code 中输入：`算八字` `看八字` `排盘` `bazi`
+
+## 📊 支持的分析流派
+
+- 🏛️ 经典派 - 传统典籍
+- 🌿 徐五行派 - 五行调理
+- 💭 李涵琛派 - 心理分析
+- 🎯 港台派 - 快速预测
+- 🧠 心理派 - 心理保健
+- 🔄 混合派 - 综合分析
+
+## 📁 项目结构
+
+```
+bazi-skill/
+├── SKILL.md
+├── references/
+│   ├── schools-framework.md
+│   ├── school-selection-guide.md ⭐
+│   ├── case-examples.md ⭐
+│   ├── faq.md ⭐
+│   └── ... 其他参考文件
+├── LICENSE
+└── README.md
+```
+
+## ⚖️ 免责声明
+
+本 Skill 仅供传统文化学习与娱乐参考。
