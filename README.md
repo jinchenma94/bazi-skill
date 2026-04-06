@@ -42,6 +42,16 @@ bazi-skill/
 │   ├── school-selection-guide.md ⭐
 │   ├── case-examples.md ⭐
 │   ├── faq.md ⭐
+│   ├── dizhi-canggan.md        — 地支藏干系统
+│   ├── xing-chong-he-hai.md    — 地支刑冲合害破
+│   ├── tiangan-heke.md         — 天干合克系统
+│   ├── nayin-wuxing.md         — 纳音五行体系
+│   ├── kongwang.md             — 空亡系统
+│   ├── zhen-taiyang-shi.md     — 真太阳时校正
+│   ├── taiyuan-minggong.md     — 胎元命宫身宫
+│   ├── classic-duanyu.md       — 经典断语口诀库
+│   ├── master-methods.md       — 名家方法论
+│   ├── shishen-analysis.md     — 十神分析
 │   └── ... 其他参考文件
 ├── LICENSE
 └── README.md
