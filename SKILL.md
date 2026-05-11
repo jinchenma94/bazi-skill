@@ -372,8 +372,8 @@ description: >
 ## 易经哲学基础
 
 - references/yijing-foundation.md — 易经总纲：命理学的哲学基础（阴阳/五行/河图洛书/先后天八卦）
-
----
+- references/glossary.md — 术语词典（按拼音索引，含主题分类速查）
+- references/bibliography.md — 参考书目总索引（按朝代/流派分类，含初学/进阶/高级推荐）
 
 ---
 
