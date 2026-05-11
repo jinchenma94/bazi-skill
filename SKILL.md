@@ -287,6 +287,8 @@ description: >
 - references/taiyuan-minggong.md — 胎元命宫身宫
 - references/classic-duanyu.md — 经典断语口诀库
 - references/master-methods.md — 名家方法论
+- references/glossary.md — 术语词典（按拼音索引，含主题分类速查）
+- references/bibliography.md — 参考书目总索引（按朝代/流派分类，含初学/进阶/高级推荐）
 
 ---
 
