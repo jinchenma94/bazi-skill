@@ -276,6 +276,9 @@ description: >
 - references/schools-comparison.md — 各流派对比详表
 - references/classical-texts.md — 经典典籍规则
 - references/master-methods.md — 名家方法论
+- references/choosing-yongshen.md — 用神确定完全指南
+- references/dayun-liuyear-interaction.md — 大运流年联动规则
+- references/nvming-zhuanlun.md — 女命专论（传统理论 + 现代视角）
 
 ### 基础排盘与算法
 - references/shichen-table.md — 时辰对照表（含子时三派）
