@@ -1,57 +1,166 @@
-# Comprehensive Ten-Stem Position and Combination Analysis
+# 十神宫位与天干组合分析
 
-## Basic Ten-Stem Reference Table
-| Stem | Element | Yin/Yang | Cycle |
-|------|---------|----------|-------|
-| Jia  | Wood    | Yang     | 1     |
-| Yi   | Wood    | Yin      | 2     |
-| Bing | Fire    | Yang     | 3     |
-| Ding | Fire    | Yin      | 4     |
-| Wu   | Earth   | Yang     | 5     |
-| Ji   | Earth   | Yin      | 6     |
-| Geng  | Metal   | Yang     | 7     |
-| Xin  | Metal   | Yin      | 8     |
-| Ren  | Water   | Yang     | 9     |
-| Gui  | Water   | Yin      | 10    |
+> 本文件前一版本为英文，且部分"吉凶组合"的论断与传统子平不符（例如把"甲+庚"笼统列为"不利"、把"壬+癸"说成"水溺"等）。本次全面重写为中文，并按《滴天髓》《子平真诠》的正统生克理论调整。
 
-## Four-Pillars Ten-Stem Position Meanings
-- **Year Pillar**: Represents ancestry, life path, and overall destiny. Influences major life events.
-- **Month Pillar**: Relates to career, skills, and relationships. It governs the workplace and interactions with peers.
-- **Day Pillar**: Symbolizes the self, personal identity, and interactions at the core level. It's the most personal pillar.
-- **Time Pillar**: Pertains to the future, children, and personal aspirations. It reflects one's hidden potential and future endeavors.
+## 一、十天干基础表
 
-## Ten-Stem Auspicious and Inauspicious Combinations
-- **Auspicious Combinations**:
-  - Jia + Yi (Wood Growth)
-  - Wu + Ji (Foundation and Balance)
-  - Bing + Ding (Fire and Passion)
-- **Inauspicious Combinations**:
-  - Geng + Xin (Metal Cuts Metal)
-  - Ren + Gui (Water Drown)
-  - Jia + Geng (Wood Hindered by Metal)
+| 天干 | 五行 | 阴阳 | 序号 | 类象 |
+|------|------|------|------|------|
+| 甲 | 木 | 阳 | 1 | 栋梁、大树、参天之木 |
+| 乙 | 木 | 阴 | 2 | 花草、藤萝、柔韧之木 |
+| 丙 | 火 | 阳 | 3 | 太阳、光明、炎上之火 |
+| 丁 | 火 | 阴 | 4 | 灯烛、星辰、温煦之火 |
+| 戊 | 土 | 阳 | 5 | 高山、城墙、厚重之土 |
+| 己 | 土 | 阴 | 6 | 田园、湿土、养育之土 |
+| 庚 | 金 | 阳 | 7 | 金属、斧钺、肃杀之金 |
+| 辛 | 金 | 阴 | 8 | 珠玉、刀刃、秀气之金 |
+| 壬 | 水 | 阳 | 9 | 江河、汪洋、奔流之水 |
+| 癸 | 水 | 阴 | 10 | 雨露、溪涧、润泽之水 |
 
-## Position Strength Ranking
-1. **Strong** (Jia, Bing, Wu, Geng)
-2. **Moderate** (Yi, Ding, Ji, Xin)
-3. **Weak** (Ren, Gui)
+---
 
-## Quick Reference Tables
-### Best Position Combinations
-| Combination | Description |
-|-------------|-------------|
-| Jia + Yi   | Harmonious growth |
-| Bing + Ding | Strong fire element |
-| Wu + Ji    | Balanced earth foundation |
+## 二、四柱宫位十神象义
 
-### Careful Position Combinations
-| Combination | Description |
-|-------------|-------------|
-| Geng + Xin  | Caution required |
-| Ren + Gui   | Need for balance |
+| 宫位 | 主要代表 | 对应人生阶段 | 十神观察重点 |
+|------|---------|------------|----------------|
+| 年柱 | 祖辈、幼年、出身根基、社会大环境 | 0–16 岁 | 祖德、家世、童年 |
+| 月柱 | 父母、兄弟、事业平台、月令提纲 | 16–32 岁 | 格局主根、青年成长 |
+| 日柱（干） | 命主本身（日主） | 核心自我 | 一切其他字的参照点 |
+| 日柱（支） | 配偶宫、内心 | 32–48 岁 | 婚姻、夫妻感情 |
+| 时柱 | 子女、晚年、下属、理想归宿 | 48 岁以后 | 子息、晚景 |
 
-## Key Principles for Ten-Stem Analysis
-1. **Balance**: Always consider the balance of elements in a chart.
-2. **Harmony**: Look for harmonious combinations that support growth and development.
-3. **Strength**: Assess the strength of each position to understand its influence.
-4. **Interactions**: Observe interactions between stems and their implications. 
-5. **Contextual Analysis**: Always analyze each chart in its unique context.
+> 不同流派对宫位的使用有差异：传统子平以"月令"定格局；李涵辰新派以"宫位 + 十神"细化断事；港台派更重视"大运与宫位的流动"。
+
+---
+
+## 三、天干五合（正统）
+
+天干五合是**阴阳相合**，属正统原理：
+
+| 组合 | 合化五行 | 性质 | 条件 |
+|------|--------|------|------|
+| 甲 + 己 | 化土 | 中正之合 | 须见辰、戌、丑、未月且土旺 |
+| 乙 + 庚 | 化金 | 仁义之合 | 须见巳、酉、丑月且金旺 |
+| 丙 + 辛 | 化水 | 威制之合 | 须见申、子、辰月且水旺 |
+| 丁 + 壬 | 化木 | 淫慝之合 | 须见亥、卯、未月且木旺 |
+| 戊 + 癸 | 化火 | 无情之合 | 须见寅、午、戌月且火旺 |
+
+**真化** vs **假化**：
+- **真化**：五合 + 月令得化神之气 + 命局无破 → 可成化气格
+- **假化**：五合但化神无气，或有克化神之物 → 合而不化，只论"绊住"
+
+> 详见 `tiangan-heke.md`。
+
+---
+
+## 四、天干相克（正统）
+
+| 类型 | 克法 | 说明 |
+|------|------|------|
+| 阳克阳 | 甲克戊、丙克庚、戊克壬、庚克甲、壬克丙 | 克力最重（七杀之克） |
+| 阴克阴 | 乙克己、丁克辛、己克癸、辛克乙、癸克丁 | 克力次之（正官之克） |
+| 阳克阴 | 甲克己、丙克辛、戊克癸、庚克乙、壬克丁 | 有情之克（合而克） |
+| 阴克阳 | 乙克戊、丁克庚、己克壬、辛克甲、癸克丙 | 阴柔克阳刚，克力较轻 |
+
+> ⚠️ 修正旧版误论：
+> - "甲 + 乙" 不是"不吉"，同为木是**比劫**关系，对日主旺衰有影响，本身无吉凶
+> - "壬 + 癸" 不是"水溺"，同为水是**比劫**关系
+> - "庚 + 辛" 不是"金切金"，同为金是**比劫**关系
+> - "甲 + 庚" 不是笼统"木受金阻"，要看甲木旺衰：若甲木旺，则"庚金劈甲"反为大用（《滴天髓》"庚金劈甲引丁"）
+
+---
+
+## 五、常见天干组合的古典意象
+
+以下组合来自《滴天髓》《穷通宝典》等典籍，**吉凶随命局配合而变，不是绝对**：
+
+### 1. 甲庚配（庚金劈甲）
+- **吉**：甲木强旺、丁火透出 → 庚劈甲引丁，贵格
+- **凶**：甲木衰弱、丁火不透 → 庚金摧甲，不利
+
+### 2. 丙辛配（丙辛化水）
+- **吉**：月令水旺 → 真化水，水火既济
+- **凶**：丙辛相合但命局火旺、水无根 → 合而不化，贪合绊身
+
+### 3. 丁壬配（丁壬化木）
+- **吉**：亥卯未月、木气流通 → 成木格
+- **凶**：丁壬合而不化 + 女命 → 古人称"淫慝之合"，今人理解为感情易有纠葛
+
+### 4. 戊癸配（戊癸化火）
+- **吉**：寅午戌月、火神得用 → 化气格
+- **凶**：老少配之象（戊为阳之极、癸为阴之极），古称"无情"
+
+### 5. 甲己配（甲己化土）
+- **吉**：辰戌丑未月、土旺得时 → 中正之合，贵格之一
+- **凶**：合而不化时，甲木无用、己土被绊
+
+### 6. 乙庚配（乙庚化金）
+- **吉**：巳酉丑月 → 仁义之合，义气财帛皆可
+- **凶**：合而不化 → 乙被庚绊
+
+---
+
+## 六、天干力量评估要点
+
+天干的"强弱"**不由自身决定**，而由以下因素综合决定：
+
+1. **是否得令**：所在月份是否为该干的旺相月
+2. **是否得地**：地支中是否有通根（本气、中气、余气）
+3. **是否得生**：是否有生我之干或支
+4. **是否得助**：是否有同类之干或支
+5. **是否被克泄**：是否被克我、泄我之物损耗
+
+> ⚠️ 修正旧版误论：
+> 旧版"阳干强、阴干弱"（Strong/Moderate/Weak）的说法是错误的。
+> 天干力量**不分阴阳高低**，只看是否得令得地得生得助。阴干若得月令，比失令的阳干更旺。
+
+---
+
+## 七、十神分析的关键原则
+
+### 原则1：平衡（Balance）
+考察五行之间的整体均衡，不是追求"五行俱全"，而是**该补的补、该泄的泄**。
+
+### 原则2：中和（Harmony）
+《滴天髓》："能使日主中和者，即为用神。"中和不是平均，是**动态平衡**。
+
+### 原则3：成格（Formation）
+《子平真诠》："八字用神，专求月令。"格局成不成，是断命第一关。
+
+### 原则4：用神有力（Strength of Yongshen）
+用神需要**有根、有援、不受克破**，才能真正发挥作用。
+
+### 原则5：动态分析（Contextual Analysis）
+同一天干在不同的命局、不同的大运，吉凶可能完全相反。切忌脱离整体命局单看某两个字。
+
+---
+
+## 八、快速参考
+
+### 常见组合关系（中性，需结合命局）
+
+| 组合 | 性质 | 备注 |
+|------|------|------|
+| 甲 + 乙 | 比肩劫财（木） | 看日主需要 |
+| 丙 + 丁 | 比肩劫财（火） | 看日主需要 |
+| 戊 + 己 | 比肩劫财（土） | 看日主需要 |
+| 庚 + 辛 | 比肩劫财（金） | 看日主需要 |
+| 壬 + 癸 | 比肩劫财（水） | 看日主需要 |
+
+### 合化口诀
+
+> 甲己合化土、乙庚合化金、丙辛合化水、丁壬合化木、戊癸合化火。
+
+### 七杀之克（阳克阳、阴克阴，克力最重）
+
+> 甲克戊、乙克己、丙克庚、丁克辛、戊克壬、己克癸、庚克甲、辛克乙、壬克丙、癸克丁。
+
+---
+
+## 九、延伸阅读
+
+- `tiangan-heke.md`：天干合化冲克完整规则
+- `shishen-analysis.md`：十神单字象义详解
+- `shishen-taboos.md`：十神组合的传统忌讳
+- `dizhi-canggan.md`：地支藏干与通根判断
+- `choosing-yongshen.md`：用神确定的系统方法
