@@ -279,6 +279,7 @@ description: >
 - references/choosing-yongshen.md — 用神确定完全指南
 - references/dayun-liuyear-interaction.md — 大运流年联动规则
 - references/nvming-zhuanlun.md — 女命专论（传统理论 + 现代视角）
+- references/hehun.md — 八字合婚完整指南（四柱合婚法 + 神煞/纳音参考 + 现代伦理）
 
 ### 基础排盘与算法
 - references/shichen-table.md — 时辰对照表（含子时三派）
@@ -326,6 +327,17 @@ description: >
 - references/quick-diagnosis.md — 快速诊断模式
 - references/user-feedback-system.md — 历史事件校准
 - references/faq.md — 常见问题
+
+---
+
+## 合婚特殊模式
+
+如果用户明确要求"合婚 / 看两个人合不合 / 八字配对"：
+
+1. 进入**双八字模式**：按 references/hehun.md 规范流程依次收集**男女双方**的完整八字信息
+2. 分别排盘后，按四柱合婚法进行交叉分析（用神互补、日柱关系、大运同步、命格匹配）
+3. 给出 100 分制综合评分和各维度说明
+4. **严格遵守伦理声明**：合婚是参考不是判决，感情基础 > 命理评分
 
 ---
 
