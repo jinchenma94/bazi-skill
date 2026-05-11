@@ -186,14 +186,16 @@ description: >
 
 ### 通用分析步骤（所有流派都做）
 
-1. **日主分析** - 判断日干旺衰（是否得令、得地、得生、得助）
-2. **十神分析** - 列出各柱十神关系
-3. **五行平衡** - 统计五行分布（金木水火土各多少）
-4. **格局判定** - 确定格局高低（富格、贵格、普通格）
-5. **大运分析** - 分析当前所处大运阶段的吉凶
-6. **流年分析** - 预测当前流年的运势走向
-7. **历史事件校准** - 询问用户过往大事件，验证分析准确性
-8. **综合建议** - 根据分析结果给出事业、财运、感情、健康建议
+1. **日主分析** - 判断日干旺衰（是否得令、得地、得生、得助），参考 `bazi-strength-rating.md`
+2. **调候优先判断** - 按《穷通宝典》原则，先看日干所处月令的寒暖燥湿，判断是否需要调候（调候用神优先于扶抑用神），查 `tiaohou-yongshen.md` 的 120 条完整表
+3. **十神分析** - 列出各柱十神关系，参考 `shishen-analysis.md`
+4. **五行平衡** - 统计五行分布（金木水火土各多少）
+5. **格局判定** - 按《子平真诠》"月令定格"原则确定八格，并评估成格/破格；用神·相神·喜神·忌神四神体系见 `zipin-zhenquan-sishen.md`
+6. **病药判断** - 按《神峰通考》识别命局之"病"（日主弱/旺、财多身弱、官杀混杂、印重身旺等），寻找"药"（见 `shenfeng-bingyao.md`）
+7. **大运分析** - 分析当前所处大运阶段的吉凶，考察岁运对格局的成败影响
+8. **流年分析** - 预测当前流年的运势走向
+9. **历史事件校准** - 询问用户过往大事件，验证分析准确性
+10. **综合建议** - 根据分析结果给出事业、财运、感情、健康建议
 
 ### 流派特色分析
 
@@ -261,24 +263,59 @@ description: >
 
 ## 参考文件
 
+### 流派与概论
 - references/schools-framework.md — 六大流派框架
 - references/school-selection-guide.md — 流派选择指南
-- references/case-examples.md — 实战案例
-- references/faq.md — 常见问题
-- references/shichen-table.md — 时辰对照表
-- references/wuxing-tables.md — 五行参考表
+- references/schools-comparison.md — 各流派对比详表
 - references/classical-texts.md — 经典典籍规则
-- references/dayun-rules.md — 大运排列规则
-- references/shishen-analysis.md — 十神分析
-- references/dizhi-canggan.md — 地支藏干系统
-- references/xing-chong-he-hai.md — 地支刑冲合害破系统
-- references/tiangan-heke.md — 天干合克系统
-- references/nayin-wuxing.md — 纳音五行体系
-- references/kongwang.md — 空亡系统
-- references/zhen-taiyang-shi.md — 真太阳时校正
-- references/taiyuan-minggong.md — 胎元命宫身宫
-- references/classic-duanyu.md — 经典断语口诀库
 - references/master-methods.md — 名家方法论
+
+### 基础排盘与算法
+- references/shichen-table.md — 时辰对照表（含子时三派）
+- references/zhen-taiyang-shi.md — 真太阳时校正
+- references/dayun-rules.md — 大运排列规则
+- references/dayun-liuyear-interaction.md — 大运流年互动
+- references/taiyuan-minggong.md — 胎元命宫身宫
+- references/kongwang.md — 空亡系统
+
+### 核心五行与干支
+- references/wuxing-tables.md — 五行参考表
+- references/dizhi-canggan.md — 地支藏干系统
+- references/tiangan-heke.md — 天干合克系统
+- references/xing-chong-he-hai.md — 地支刑冲合害破系统
+- references/nayin-wuxing.md — 纳音五行体系
+
+### 十神与格局分析
+- references/shishen-analysis.md — 十神分析
+- references/shishen-combinations.md — 十神宫位与天干组合
+- references/shishen-taboos.md — 十神组合禁忌
+- references/bazi-strength-rating.md — 日主旺衰评估
+- references/special-formats.md — 特殊格局
+- references/choosing-yongshen.md — 用神确定
+
+### 经典流派深度（**第二阶段新增**）
+- references/tiaohou-yongshen.md — 《穷通宝典》调候用神完整表（120 条）⭐
+- references/zipin-zhenquan-sishen.md — 《子平真诠》四神体系（用神·相神·喜神·忌神）⭐
+- references/shenfeng-bingyao.md — 《神峰通考》病药说 ⭐
+- references/manpai-school.md — 盲派命理完整指南 ⭐
+
+### 六大流派专题
+- references/xu-wuxing-school.md — 徐五行派
+- references/li-hanchen-school.md — 李涵辰新派（宾主说）
+- references/hong-kong-taiwan-school.md — 港台派
+- references/psychology-school.md — 心理派
+
+### 神煞与口诀
+- references/shensha-complete-system.md — 神煞完整系统
+- references/shensha-guide.md — 神煞速查
+- references/shensha-by-schools.md — 各流派神煞用法对比
+- references/classic-duanyu.md — 经典断语口诀库
+
+### 实战与反馈
+- references/case-examples.md — 实战案例
+- references/quick-diagnosis.md — 快速诊断模式
+- references/user-feedback-system.md — 历史事件校准
+- references/faq.md — 常见问题
 
 ---
 
