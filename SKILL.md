@@ -193,15 +193,16 @@ description: >
 
 ### 通用分析步骤（所有流派都做）
 
-1. **日主分析** - 判断日干旺衰（是否得令、得地、得生、得助）
-2. **调候优先判断** - 按《穷通宝典》原则，先看日干所处月令的寒暖燥湿，判断是否需要调候（调候用神优先于扶抑用神）
-3. **十神分析** - 列出各柱十神关系
+1. **日主分析** - 判断日干旺衰（是否得令、得地、得生、得助），参考 `bazi-strength-rating.md`
+2. **调候优先判断** - 按《穷通宝典》原则，先看日干所处月令的寒暖燥湿，判断是否需要调候（调候用神优先于扶抑用神），查 `tiaohou-yongshen.md` 的 120 条完整表
+3. **十神分析** - 列出各柱十神关系，参考 `shishen-analysis.md`
 4. **五行平衡** - 统计五行分布（金木水火土各多少）
-5. **格局判定** - 确定格局高低（富格、贵格、普通格）；按《子平真诠》成败论判断用神、相神、喜神、忌神
-6. **大运分析** - 分析当前所处大运阶段的吉凶
-7. **流年分析** - 预测当前流年的运势走向
-8. **历史事件校准** - 询问用户过往大事件，验证分析准确性
-9. **综合建议** - 根据分析结果给出事业、财运、感情、健康建议
+5. **格局判定** - 按《子平真诠》"月令定格"原则确定八格，并评估成格/破格；用神·相神·喜神·忌神四神体系见 `zipin-zhenquan-sishen.md`
+6. **病药判断** - 按《神峰通考》识别命局之"病"（日主弱/旺、财多身弱、官杀混杂、印重身旺等），寻找"药"（见 `shenfeng-bingyao.md`）
+7. **大运分析** - 分析当前所处大运阶段的吉凶，考察岁运对格局的成败影响
+8. **流年分析** - 预测当前流年的运势走向
+9. **历史事件校准** - 询问用户过往大事件，验证分析准确性
+10. **综合建议** - 根据分析结果给出事业、财运、感情、健康建议
 
 ### 流派特色分析
 
@@ -259,7 +260,7 @@ description: >
 步骤3：准确度评分
 - 3个都对 → 准确度95%+
 - 2个对 → 准确度80%
-- 1个对 �� 准确度60%
+- 1个对 → 准确度60%
 - 都不对 → 需要重新调整时辰
 
 步骤4：微调
@@ -269,24 +270,110 @@ description: >
 
 ## 参考文件
 
+### 流派与概论
 - references/schools-framework.md — 六大流派框架
 - references/school-selection-guide.md — 流派选择指南
-- references/case-examples.md — 实战案例
-- references/faq.md — 常见问题
-- references/shichen-table.md — 时辰对照表
-- references/wuxing-tables.md — 五行参考表
+- references/schools-comparison.md — 各流派对比详表
 - references/classical-texts.md — 经典典籍规则
-- references/dayun-rules.md — 大运排列规则
-- references/shishen-analysis.md — 十神分析
-- references/dizhi-canggan.md — 地支藏干系统
-- references/xing-chong-he-hai.md — 地支刑冲合害破系统
-- references/tiangan-heke.md — 天干合克系统
-- references/nayin-wuxing.md — 纳音五行体系
-- references/kongwang.md — 空亡系统
-- references/zhen-taiyang-shi.md — 真太阳时校正
-- references/taiyuan-minggong.md — 胎元命宫身宫
-- references/classic-duanyu.md — 经典断语口诀库
 - references/master-methods.md — 名家方法论
+- references/choosing-yongshen.md — 用神确定完全指南
+- references/dayun-liuyear-interaction.md — 大运流年联动规则
+- references/nvming-zhuanlun.md — 女命专论（传统理论 + 现代视角）
+- references/hehun.md — 八字合婚完整指南（四柱合婚法 + 神煞/纳音参考 + 现代伦理）
+
+### 基础排盘与算法
+- references/shichen-table.md — 时辰对照表（含子时三派）
+- references/zhen-taiyang-shi.md — 真太阳时校正
+- references/dayun-rules.md — 大运排列规则
+- references/dayun-liuyear-interaction.md — 大运流年互动
+- references/taiyuan-minggong.md — 胎元命宫身宫
+- references/kongwang.md — 空亡系统
+
+### 核心五行与干支
+- references/wuxing-tables.md — 五行参考表
+- references/dizhi-canggan.md — 地支藏干系统
+- references/tiangan-heke.md — 天干合克系统
+- references/xing-chong-he-hai.md — 地支刑冲合害破系统
+- references/nayin-wuxing.md — 纳音五行体系
+
+### 十神与格局分析
+- references/shishen-analysis.md — 十神分析
+- references/shishen-combinations.md — 十神宫位与天干组合
+- references/shishen-taboos.md — 十神组合禁忌
+- references/bazi-strength-rating.md — 日主旺衰评估
+- references/special-formats.md — 特殊格局
+- references/choosing-yongshen.md — 用神确定
+
+### 经典流派深度（**第二阶段新增**）
+- references/tiaohou-yongshen.md — 《穷通宝典》调候用神完整表（120 条）⭐
+- references/zipin-zhenquan-sishen.md — 《子平真诠》四神体系（用神·相神·喜神·忌神）⭐
+- references/shenfeng-bingyao.md — 《神峰通考》病药说 ⭐
+- references/manpai-school.md — 盲派命理完整指南 ⭐
+
+### 六大流派专题
+- references/xu-wuxing-school.md — 徐五行派
+- references/li-hanchen-school.md — 李涵辰新派（宾主说）
+- references/hong-kong-taiwan-school.md — 港台派
+- references/psychology-school.md — 心理派
+
+### 神煞与口诀
+- references/shensha-complete-system.md — 神煞完整系统
+- references/shensha-guide.md — 神煞速查
+- references/shensha-by-schools.md — 各流派神煞用法对比
+- references/classic-duanyu.md — 经典断语口诀库
+
+### 实战与反馈
+- references/case-examples.md — 实战案例
+- references/quick-diagnosis.md — 快速诊断模式
+- references/user-feedback-system.md — 历史事件校准
+- references/faq.md — 常见问题
+- references/zeri.md — 择日学完整指南（婚嫁/开张/搬家/手术等）
+- references/xingming-bazi.md — 姓名学与八字配合（起名/改名实用方法）
+
+---
+
+## 合婚特殊模式
+
+如果用户明确要求"合婚 / 看两个人合不合 / 八字配对"：
+
+1. 进入**双八字模式**：按 references/hehun.md 规范流程依次收集**男女双方**的完整八字信息
+2. 分别排盘后，按四柱合婚法进行交叉分析（用神互补、日柱关系、大运同步、命格匹配）
+3. 给出 100 分制综合评分和各维度说明
+4. **严格遵守伦理声明**：合婚是参考不是判决，感情基础 > 命理评分
+
+---
+
+## 择日特殊模式
+
+如果用户明确要求"择日 / 看吉日 / 看结婚日期 / 看开张日期 / 看搬家日期"等：
+
+1. 先按标准流程收集命主完整八字
+2. 确定用神、忌神、大运
+3. 问清**择日目的**（婚嫁/开张/动土/搬家/出行/手术等）和**时间范围**
+4. 按 `references/zeri.md` 的四层过滤法（去大凶→去事类忌→求吉神→配用神）
+5. 给出 3 个首选日期 + 2 个备选日期，并推荐时辰
+6. **严格伦理**：明确"择日是参考不是保证"，拒绝焦虑营销
+
+---
+
+## 起名/改名特殊模式
+
+如果用户明确要求"起名 / 改名 / 姓名分析"：
+
+1. 先按标准流程排命主八字（新生儿可用预产期近似）
+2. 确定命主用神、忌神
+3. 问清"姓"和"起几字名"
+4. 按 `references/xingming-bazi.md` 的八步流程（排八字→定五行需求→选字→五格→三才→生肖→音韵→综合）
+5. 给出 2-3 个候选名字，每个附**五行补益说明 + 五格数理 + 文化寓意**
+6. **严格伦理**：明确"名字是辅助不是决定命运"，拒绝"改名改命"的夸大宣传
+
+---
+
+## 易经哲学基础
+
+- references/yijing-foundation.md — 易经总纲：命理学的哲学基础（阴阳/五行/河图洛书/先后天八卦）
+- references/glossary.md — 术语词典（按拼音索引，含主题分类速查）
+- references/bibliography.md — 参考书目总索引（按朝代/流派分类，含初学/进阶/高级推荐）
 
 ---
 
