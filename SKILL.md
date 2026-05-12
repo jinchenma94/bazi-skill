@@ -303,6 +303,8 @@ description: >
 - references/special-formats.md — 特殊格局
 - references/choosing-yongshen.md — 用神确定完全指南
 - references/yingqi-duanshi.md — 应期断事十法（断何年何事的实战技法）
+- references/liuqin-jinglun.md — 六亲精断完整指南（星+宫+运三层验证）
+- references/jibing-yuce.md — 疾病预测（天干脏腑/地支经络/五行病象）
 
 ### 【经典流派深度】
 - references/ditian-suiyu.md — 《滴天髓》50 条核心赋文逐条解析 ⭐
@@ -339,10 +341,11 @@ description: >
 - references/bibliography.md — 参考书目总索引（按朝代/流派分类，含初学/进阶/高级推荐）
 
 ### 【实战与反馈】
-- references/case-examples.md — 实战案例
+- references/case-examples.md — 实战案例（含 6 个经典命例深度分析）
 - references/quick-diagnosis.md — 快速诊断模式
 - references/user-feedback-system.md — 历史事件校准系统
 - references/faq.md — 常见问题
+- references/mingli-history.md — 命理学 1200 年演变史（唐→宋→明→清→民国→当代）
 
 ---
 

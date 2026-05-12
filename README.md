@@ -96,6 +96,8 @@ bazi-skill/
     ├── choosing-yongshen.md           用神确定完全指南
     ├── tiangan-xingqing.md            十天干性情论（性情/类象/喜忌/诗诀）
     ├── yingqi-duanshi.md              应期断事十法（断何年何事的实战技法）
+    ├── liuqin-jinglun.md             六亲精断（看父母/配偶/子女完整方法链）
+    ├── jibing-yuce.md                疾病预测（天干脏腑/地支经络/五行病象）
     ├── shishen-analysis.md            十神分析
     ├── shishen-combinations.md        十神宫位组合
     ├── shishen-taboos.md              十神禁忌与吉配
@@ -118,13 +120,14 @@ bazi-skill/
     ├── bibliography.md                参考书目总索引（按朝代 + 流派）
     │
     └── 【实战与反馈】
-        ├── case-examples.md           实战案例
+        ├── case-examples.md           实战案例（含 6 个经典命例深度分析）
         ├── quick-diagnosis.md         5 分钟快速诊断
         ├── user-feedback-system.md    历史事件校准系统
+        ├── mingli-history.md          命理学 1200 年演变史
         └── faq.md                     常见问题
 ```
 
-> 项目共含 **51 个 reference 文件**，覆盖从哲学总纲到实战应用的完整命理体系。
+> 项目共含 **55 个 reference 文件**，覆盖从哲学总纲到实战应用的完整命理体系。
 
 ## 🎯 适用人群
 
