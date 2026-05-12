@@ -242,18 +242,15 @@ description: >
 
 ---
 
-## ⭐ 快速诊断模式 (新增)
+## ⭐ 快速诊断模式
 
-如果用户时间紧张，提供5分钟快速诊断：
-
+如果用户时间紧张，可提供 5 分钟快速诊断：只做排盘 + 日主旺衰 + 当年大运流年吉凶，跳过深度格局分析。详见 `references/quick-diagnosis.md`。
 
 ---
 
-## 🔄 用户反馈机制 (新增)
+## 🔄 用户反馈机制
 
-添加反馈循环以提高准确性：
-
-**历史事件校准流程**：
+**历史事件校准流程**（提升分析准确性）：
 
 步骤1：提问
 > "请告诉我您印象最深的3个人生大事件（如：恋爱、升职、生病、搬家等）"
@@ -270,69 +267,76 @@ description: >
 步骤4：微调
 > 根据反馈结果调整分析角度和建议
 
+详见 `references/user-feedback-system.md`。
+
 ---
 
 ## 参考文件
 
-### 流派与概论
-- references/schools-framework.md — 六大流派框架
-- references/school-selection-guide.md — 流派选择指南
-- references/schools-comparison.md — 各流派对比详表
-- references/classical-texts.md — 经典典籍规则
-- references/master-methods.md — 名家方法论
-- references/choosing-yongshen.md — 用神确定完全指南
-- references/dayun-liuyear-interaction.md — 大运流年联动规则
-- references/nvming-zhuanlun.md — 女命专论（传统理论 + 现代视角）
-- references/hehun.md — 八字合婚完整指南（四柱合婚法 + 神煞/纳音参考 + 现代伦理）
+### 【哲学总章】
+- references/yijing-foundation.md — 易经总纲：命理学的哲学基础（阴阳/五行/河图洛书/先后天八卦）
 
-### 基础排盘与算法
-- references/shichen-table.md — 时辰对照表（含子时三派）
+### 【基础排盘与算法】
+- references/shichen-table.md — 时辰对照表（含子时三派处理）
 - references/zhen-taiyang-shi.md — 真太阳时校正
 - references/dayun-rules.md — 大运排列规则
-- references/dayun-liuyear-interaction.md — 大运流年互动
+- references/dayun-liuyear-interaction.md — 大运流年联动规则
 - references/taiyuan-minggong.md — 胎元命宫身宫
 - references/kongwang.md — 空亡系统
 
-### 核心五行与干支
+### 【核心五行与干支】
 - references/wuxing-tables.md — 五行参考表
 - references/dizhi-canggan.md — 地支藏干系统
 - references/tiangan-heke.md — 天干合克系统
 - references/xing-chong-he-hai.md — 地支刑冲合害破系统
 - references/nayin-wuxing.md — 纳音五行体系
 
-### 十神与格局分析
+### 【十神与格局分析】
 - references/shishen-analysis.md — 十神分析
 - references/shishen-combinations.md — 十神宫位与天干组合
 - references/shishen-taboos.md — 十神组合禁忌
 - references/bazi-strength-rating.md — 日主旺衰评估
 - references/special-formats.md — 特殊格局
-- references/choosing-yongshen.md — 用神确定
+- references/choosing-yongshen.md — 用神确定完全指南
 
-### 经典流派深度（**第二阶段新增**）
+### 【经典流派深度】
 - references/tiaohou-yongshen.md — 《穷通宝典》调候用神完整表（120 条）⭐
 - references/zipin-zhenquan-sishen.md — 《子平真诠》四神体系（用神·相神·喜神·忌神）⭐
 - references/shenfeng-bingyao.md — 《神峰通考》病药说 ⭐
 - references/manpai-school.md — 盲派命理完整指南 ⭐
 
-### 六大流派专题
+### 【流派框架与专题】
+- references/schools-framework.md — 六大流派框架
+- references/school-selection-guide.md — 流派选择指南
+- references/schools-comparison.md — 各流派对比详表
+- references/classical-texts.md — 经典典籍规则
+- references/master-methods.md — 名家方法论
 - references/xu-wuxing-school.md — 徐五行派
 - references/li-hanchen-school.md — 李涵辰新派（宾主说）
 - references/hong-kong-taiwan-school.md — 港台派
 - references/psychology-school.md — 心理派
 
-### 神煞与口诀
+### 【神煞与口诀】
 - references/shensha-complete-system.md — 神煞完整系统
 - references/shensha-guide.md — 神煞速查
 - references/shensha-by-schools.md — 各流派神煞用法对比
 - references/classic-duanyu.md — 经典断语口诀库
 
-### 实战与反馈
-- references/case-examples.md — 实战案例
-- references/quick-diagnosis.md — 快速诊断模式
-- references/user-feedback-system.md — 历史事件校准
-- references/faq.md — 常见问题
+### 【应用专题】
+- references/nvming-zhuanlun.md — 女命专论（传统理论 + 现代视角）
+- references/hehun.md — 八字合婚完整指南（四柱合婚法 + 神煞/纳音参考 + 现代伦理）
 - references/zeri.md — 择日学完整指南（婚嫁/开张/搬家/手术等）
 - references/xingming-bazi.md — 姓名学与八字配合（起名/改名实用方法）
+
+### 【工程索引】
+- references/glossary.md — 术语词典（按拼音索引，含主题分类速查）
+- references/bibliography.md — 参考书目总索引（按朝代/流派分类，含初学/进阶/高级推荐）
+
+### 【实战与反馈】
+- references/case-examples.md — 实战案例
+- references/quick-diagnosis.md — 快速诊断模式
+- references/user-feedback-system.md — 历史事件校准系统
+- references/faq.md — 常见问题
 
 ---
 
@@ -340,7 +344,7 @@ description: >
 
 如果用户明确要求"合婚 / 看两个人合不合 / 八字配对"：
 
-1. 进入**双八字模式**：按 references/hehun.md 规范流程依次收集**男女双方**的完整八字信息
+1. 进入**双八字模式**：按 `references/hehun.md` 规范流程依次收集**男女双方**的完整八字信息
 2. 分别排盘后，按四柱合婚法进行交叉分析（用神互补、日柱关系、大运同步、命格匹配）
 3. 给出 100 分制综合评分和各维度说明
 4. **严格遵守伦理声明**：合婚是参考不是判决，感情基础 > 命理评分
@@ -370,14 +374,6 @@ description: >
 4. 按 `references/xingming-bazi.md` 的八步流程（排八字→定五行需求→选字→五格→三才→生肖→音韵→综合）
 5. 给出 2-3 个候选名字，每个附**五行补益说明 + 五格数理 + 文化寓意**
 6. **严格伦理**：明确"名字是辅助不是决定命运"，拒绝"改名改命"的夸大宣传
-
----
-
-## 易经哲学基础
-
-- references/yijing-foundation.md — 易经总纲：命理学的哲学基础（阴阳/五行/河图洛书/先后天八卦）
-- references/glossary.md — 术语词典（按拼音索引，含主题分类速查）
-- references/bibliography.md — 参考书目总索引（按朝代/流派分类，含初学/进阶/高级推荐）
 
 ---
 
