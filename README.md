@@ -62,6 +62,9 @@ bazi-skill/
     ├── 【基础排盘】
     ├── shichen-table.md               时辰对照表（含子时三派处理）
     ├── zhen-taiyang-shi.md            真太阳时校正
+    ├── rizhu-algorithm.md             日柱递推算法（程序化公式 + 校验表）
+    ├── qiyun-precise.md               精确起运公式（时辰级三级折算）
+    ├── jieqi-shike.md                 节气精确时刻数据集（1950-2050，12节×101年）
     ├── dayun-rules.md                 大运排列规则
     ├── dayun-liuyear-interaction.md   大运流年联动规则
     ├── wuxing-tables.md               五行参考表
@@ -78,6 +81,7 @@ bazi-skill/
     ├── school-selection-guide.md      流派选择指南
     ├── classical-texts.md             经典典籍规则
     ├── master-methods.md              名家方法论
+    ├── ditian-suiyu.md                《滴天髓》50条核心赋文逐条解析
     ├── tiaohou-yongshen.md            穷通宝典调候用神 120 条
     ├── zipin-zhenquan-sishen.md       子平真诠四神体系（用神/相神/喜神/忌神）
     ├── shenfeng-bingyao.md            神峰通考病药说
@@ -90,6 +94,8 @@ bazi-skill/
     ├── 【分析核心】
     ├── bazi-strength-rating.md        日主旺衰评分体系
     ├── choosing-yongshen.md           用神确定完全指南
+    ├── tiangan-xingqing.md            十天干性情论（性情/类象/喜忌/诗诀）
+    ├── yingqi-duanshi.md              应期断事十法（断何年何事的实战技法）
     ├── shishen-analysis.md            十神分析
     ├── shishen-combinations.md        十神宫位组合
     ├── shishen-taboos.md              十神禁忌与吉配
@@ -118,7 +124,7 @@ bazi-skill/
         └── faq.md                     常见问题
 ```
 
-> 项目共含 **40+ 个 reference 文件**，覆盖从哲学总纲到实战应用的完整命理体系。
+> 项目共含 **51 个 reference 文件**，覆盖从哲学总纲到实战应用的完整命理体系。
 
 ## 🎯 适用人群
 

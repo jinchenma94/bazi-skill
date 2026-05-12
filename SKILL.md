@@ -279,6 +279,9 @@ description: >
 ### 【基础排盘与算法】
 - references/shichen-table.md — 时辰对照表（含子时三派处理）
 - references/zhen-taiyang-shi.md — 真太阳时校正
+- references/rizhu-algorithm.md — 日柱递推算法（程序化公式 + 11 条校验）
+- references/qiyun-precise.md — 精确起运公式（时辰级三级折算 → 交运日）
+- references/jieqi-shike.md — 节气精确时刻数据集（1950-2050，12 节 × 101 年）
 - references/dayun-rules.md — 大运排列规则
 - references/dayun-liuyear-interaction.md — 大运流年联动规则
 - references/taiyuan-minggong.md — 胎元命宫身宫
@@ -292,14 +295,17 @@ description: >
 - references/nayin-wuxing.md — 纳音五行体系
 
 ### 【十神与格局分析】
+- references/tiangan-xingqing.md — 十天干性情论（性情/类象/喜忌/诗诀，断命第一步）
 - references/shishen-analysis.md — 十神分析
 - references/shishen-combinations.md — 十神宫位与天干组合
 - references/shishen-taboos.md — 十神组合禁忌
 - references/bazi-strength-rating.md — 日主旺衰评估
 - references/special-formats.md — 特殊格局
 - references/choosing-yongshen.md — 用神确定完全指南
+- references/yingqi-duanshi.md — 应期断事十法（断何年何事的实战技法）
 
 ### 【经典流派深度】
+- references/ditian-suiyu.md — 《滴天髓》50 条核心赋文逐条解析 ⭐
 - references/tiaohou-yongshen.md — 《穷通宝典》调候用神完整表（120 条）⭐
 - references/zipin-zhenquan-sishen.md — 《子平真诠》四神体系（用神·相神·喜神·忌神）⭐
 - references/shenfeng-bingyao.md — 《神峰通考》病药说 ⭐
