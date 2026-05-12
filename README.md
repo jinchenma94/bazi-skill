@@ -1,66 +1,159 @@
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)
-![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green)
+# 八字命理 Skill
 
-# 赛博算命 Skill
+基于 Claude / Claude Code 的四柱八字命理分析工具。集合**传统典籍**（子平真诠、滴天髓、穷通宝典、神峰通考）与**现代流派**（李涵辰新派、盲派、港台派、心理派），覆盖**八字分析、合婚、择日、姓名学**等完整应用场景。
 
-基于 Claude Code 的八字排盘与命理分析工具。通过交互式对话收集出生信息，排出四柱八字，参照九本经典命理典籍进行专业分析。
+## ✨ 核心功能
 
-## 功能
+| 模块 | 说明 |
+|------|------|
+| 🧮 排盘计算 | 年月日时四柱 + 大运 + 流年；含真太阳时校正、子时三派处理 |
+| 🎯 多流派分析 | 六大流派 + 盲派独立章节，用户可按需选择 |
+| 📖 经典理论 | 格局成败、调候用神、扶抑用神、病药说、宾主说 |
+| 💞 八字合婚 | 四柱合婚法（用神互补 / 日柱关系 / 大运同步 / 命格匹配）|
+| 📅 择日学 | 婚嫁 / 开张 / 搬家 / 手术等事类的择日规范流程 |
+| ✍️ 姓名学 | 八字喜用 + 五格剖象 + 三才配置 + 生肖喜忌的综合起名法 |
+| 🔁 历史事件校准 | 用命主过往大事件反向验证，提升分析准确度 |
 
-- **信息收集** — 逐步收集姓名、阳历/农历生日、出生时辰、性别、出生地等信息
-- **排盘计算** — 自动排出年柱、月柱、日柱、时柱，计算大运与流年
-- **综合分析** — 日主强弱、十神关系、五行平衡、格局判定、大运流年解读，以及事业、感情、健康等方面的建议
+## 🚀 快速开始
 
-## 安装
-
-> **注意**：Claude Code 从 git 仓库根目录的 `.claude/skills/` 查找 skill，请在正确的位置执行。
+### 安装
 
 ```bash
-# 安装到当前项目（在 git 仓库根目录执行）
 mkdir -p .claude/skills
-git clone https://github.com/jinchenma94/bazi-skill .claude/skills/bazi
-
-# 或安装到全局（所有项目都能用）
-git clone https://github.com/jinchenma94/bazi-skill ~/.claude/skills/bazi
+git clone https://github.com/fckcg/bazi-skill .claude/skills/bazi
 ```
 
-## 使用
+### 使用
 
-在 Claude Code 中输入以下任意关键词即可触发：
+在 Claude / Claude Code 中输入对应触发词：
 
-`算八字` `看八字` `批八字` `排八字` `四柱` `命盘` `算命` `排盘` `bazi`
-
-触发后，Skill 会逐步引导你提供出生信息，然后进行排盘和综合分析。
-
-## 参考典籍
-
-| 典籍 | 简称 |
+| 场景 | 触发词 |
 |------|------|
-| 《穷通宝典》 | 论日主调候 |
-| 《三命通会》 | 论格局神煞 |
-| 《滴天髓》 | 论五行旺衰 |
-| 《渊海子平》 | 论十神六亲 |
-| 《千里命稿》 | 论命例实证 |
-| 《协纪辨方书》 | 论择日神煞 |
-| 《果老星宗》 | 论星命合参 |
-| 《子平真诠》 | 论用神格局 |
-| 《神峰通考》 | 论命理辨误 |
+| 八字分析 | `算八字` `看八字` `排盘` `bazi` |
+| 合婚 | `合婚` `看两个人合不合` `八字配对` |
+| 择日 | `择日` `看吉日` `看结婚日期` `看开张日期` |
+| 起名 / 改名 | `起名` `改名` `姓名分析` |
 
-## 项目结构
+## 📊 六大流派
+
+| 流派 | 核心方法 | 代表典籍 / 人物 |
+|------|---------|-----------------|
+| 🏛️ 经典派 | 格局 + 用神 + 调候 + 病药 | 《子平真诠》《滴天髓》《穷通宝典》《神峰通考》 |
+| 🌿 徐五行派 | 五行平衡度 + 调理方案 | 现代实用派 |
+| 💭 李涵辰新派 | 宾主说 + 十神定位 + 五行反断 | 李涵辰《四柱预测学》《命理点睛》 |
+| 🎯 港台派 | 大运流年实战预测 | 梁湘润、钟义明、李居明、麦玲玲 |
+| 🧠 心理派 | 命理与现代心理学结合 | 何建忠《八字心理推命学》 |
+| 🔄 混合派 | 综合多流派优点 | 360° 全面诊断 |
+
+另含**盲派命理**独立章节（段建业、王庆、萧富元等代表）。
+
+## 📁 项目结构
 
 ```
 bazi-skill/
-├── SKILL.md                        # Skill 入口
-├── references/                     # 参考文件
-│   ├── wuxing-tables.md            #   五行、天干地支、十神参考表
-│   ├── shichen-table.md            #   时辰对照表、日上起时法
-│   ├── dayun-rules.md              #   大运顺逆排规则、起运年龄计算
-│   └── classical-texts.md          #   九本经典典籍核心规则摘要
-├── LICENSE
-└── README.md
+├── SKILL.md                           主流程：流派选择 → 信息收集 → 排盘 → 分析
+├── LICENSE                            MIT 开源协议
+├── README.md                          本文件
+└── references/                        各主题 reference 文件
+    │
+    ├── 【哲学总章】
+    ├── yijing-foundation.md           易经总纲：阴阳 / 五行 / 河图洛书 / 先后天八卦
+    │
+    ├── 【基础排盘】
+    ├── shichen-table.md               时辰对照表（含子时三派处理）
+    ├── zhen-taiyang-shi.md            真太阳时校正
+    ├── rizhu-algorithm.md             日柱递推算法（程序化公式 + 校验表）
+    ├── qiyun-precise.md               精确起运公式（时辰级三级折算）
+    ├── jieqi-shike.md                 节气精确时刻数据集（1950-2050，12节×101年）
+    ├── dayun-rules.md                 大运排列规则
+    ├── dayun-liuyear-interaction.md   大运流年联动规则
+    ├── wuxing-tables.md               五行参考表
+    ├── dizhi-canggan.md               地支藏干系统
+    ├── dizhi-xianglun.md             地支详论（四正/四库/四生性质与实战）
+    ├── tiangan-heke.md                天干合克系统（含五合天文学来源）
+    ├── xing-chong-he-hai.md           地支刑冲合害破
+    ├── nayin-wuxing.md                纳音五行体系
+    ├── kongwang.md                    空亡系统
+    ├── taiyuan-minggong.md            胎元命宫身宫
+    │
+    ├── 【经典流派】
+    ├── schools-framework.md           六大流派框架
+    ├── schools-comparison.md          流派对比详表
+    ├── school-selection-guide.md      流派选择指南
+    ├── classical-texts.md             经典典籍规则
+    ├── master-methods.md              名家方法论
+    ├── ditian-suiyu.md                《滴天髓》50条核心赋文逐条解析
+    ├── tiaohou-yongshen.md            穷通宝典调候用神 120 条
+    ├── zipin-zhenquan-sishen.md       子平真诠四神体系（用神/相神/喜神/忌神）
+    ├── shenfeng-bingyao.md            神峰通考病药说
+    ├── manpai-school.md               盲派命理完整指南
+    ├── li-hanchen-school.md           李涵辰新派（宾主说 / 十神定位 / 五行反断）
+    ├── hong-kong-taiwan-school.md     港台派
+    ├── xu-wuxing-school.md            徐五行派
+    ├── psychology-school.md           心理派
+    │
+    ├── 【分析核心】
+    ├── bazi-strength-rating.md        日主旺衰评分体系
+    ├── choosing-yongshen.md           用神确定完全指南
+    ├── tiangan-xingqing.md            十天干性情论（性情/类象/喜忌/诗诀）
+    ├── yingqi-duanshi.md              应期断事十法（断何年何事的实战技法）
+    ├── liuqin-jinglun.md             六亲精断（看父母/配偶/子女完整方法链）
+    ├── jibing-yuce.md                疾病预测（天干脏腑/地支经络/五行病象）
+    ├── shishen-analysis.md            十神分析
+    ├── shishen-combinations.md        十神宫位组合
+    ├── shishen-taboos.md              十神禁忌与吉配
+    ├── special-formats.md             特殊格局（从格 / 化气格 / 建禄 / 羊刃）
+    │
+    ├── 【神煞与断语】
+    ├── shensha-complete-system.md     神煞完整系统（36 种常用神煞）
+    ├── shensha-guide.md               神煞速查
+    ├── shensha-by-schools.md          各流派神煞用法对比
+    ├── classic-duanyu.md              经典断语口诀库
+    │
+    ├── 【应用专题】
+    ├── nvming-zhuanlun.md             女命专论（传统理论 + 现代视角）
+    ├── hehun.md                       八字合婚（四维度评分法）
+    ├── zeri.md                        择日学（建除十二神 / 黄道黑道 / 6 步流程）
+    ├── xingming-bazi.md               姓名学与八字配合
+    │
+    ├── 【工程索引】
+    ├── glossary.md                    术语词典（按拼音索引）
+    ├── bibliography.md                参考书目总索引（按朝代 + 流派）
+    │
+    └── 【实战与反馈】
+        ├── case-examples.md           实战案例（含 6 个经典命例深度分析）
+        ├── quick-diagnosis.md         5 分钟快速诊断
+        ├── user-feedback-system.md    历史事件校准系统
+        ├── mingli-history.md          命理学 1200 年演变史
+        ├── mingli-kexue.md           命理学的科学性讨论与伪术鉴别
+        └── faq.md                     常见问题
 ```
 
-## 免责声明
+> 项目共含 **56 个 reference 文件**，覆盖从哲学总纲到实战应用的完整命理体系。
 
-本 Skill 仅供传统文化学习与娱乐参考，分析结果不构成任何决策依据。命理学属于传统文化范畴，请理性看待。
+## 🎯 适用人群
+
+- 对中国传统命理学感兴趣的爱好者
+- 希望借助 AI 辅助学习八字的学习者
+- 需要结合命理做决策参考的用户
+- 研究中国传统文化的研究者
+
+## ⚖️ 免责声明与伦理
+
+- 本 Skill 仅供**传统文化学习与参考**
+- 命理分析结果仅作参考，**不构成任何专业决策建议**（医疗、法律、投资等请咨询对应专业人士）
+- 项目坚持反对：用命理制造焦虑、诱导消费、替代专业判断
+- 强调**知命立命**：命理是了解自己的工具，不是决定命运的判决
+
+## 🤝 贡献
+
+欢迎 PR！本项目的编辑原则：
+
+- **学术严谨**：每个论断都有典籍或理论依据
+- **立场中立**：不迷信、不恐吓、不商业化
+- **现代视角**：对传统中的性别歧视、宿命论色彩做分层处理（保留 / 改造 / 摒弃）
+- **批判思维**：引用古籍时区分真作与托名伪造
+
+## 📜 许可证
+
+[MIT License](./LICENSE)
