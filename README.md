@@ -56,10 +56,14 @@ bazi-skill/
 ├── README.md                          本文件
 └── references/                        各主题 reference 文件
     │
+    ├── 【哲学总章】
+    ├── yijing-foundation.md           易经总纲：阴阳 / 五行 / 河图洛书 / 先后天八卦
+    │
     ├── 【基础排盘】
     ├── shichen-table.md               时辰对照表（含子时三派处理）
     ├── zhen-taiyang-shi.md            真太阳时校正
     ├── dayun-rules.md                 大运排列规则
+    ├── dayun-liuyear-interaction.md   大运流年联动规则
     ├── wuxing-tables.md               五行参考表
     ├── dizhi-canggan.md               地支藏干系统
     ├── tiangan-heke.md                天干合克系统
@@ -68,12 +72,16 @@ bazi-skill/
     ├── kongwang.md                    空亡系统
     ├── taiyuan-minggong.md            胎元命宫身宫
     │
-    ├── 【流派与典籍】
+    ├── 【经典流派】
     ├── schools-framework.md           六大流派框架
     ├── schools-comparison.md          流派对比详表
     ├── school-selection-guide.md      流派选择指南
     ├── classical-texts.md             经典典籍规则
     ├── master-methods.md              名家方法论
+    ├── tiaohou-yongshen.md            穷通宝典调候用神 120 条
+    ├── zipin-zhenquan-sishen.md       子平真诠四神体系（用神/相神/喜神/忌神）
+    ├── shenfeng-bingyao.md            神峰通考病药说
+    ├── manpai-school.md               盲派命理完整指南
     ├── li-hanchen-school.md           李涵辰新派（宾主说 / 十神定位 / 五行反断）
     ├── hong-kong-taiwan-school.md     港台派
     ├── xu-wuxing-school.md            徐五行派
@@ -93,6 +101,16 @@ bazi-skill/
     ├── shensha-by-schools.md          各流派神煞用法对比
     ├── classic-duanyu.md              经典断语口诀库
     │
+    ├── 【应用专题】
+    ├── nvming-zhuanlun.md             女命专论（传统理论 + 现代视角）
+    ├── hehun.md                       八字合婚（四维度评分法）
+    ├── zeri.md                        择日学（建除十二神 / 黄道黑道 / 6 步流程）
+    ├── xingming-bazi.md               姓名学与八字配合
+    │
+    ├── 【工程索引】
+    ├── glossary.md                    术语词典（按拼音索引）
+    ├── bibliography.md                参考书目总索引（按朝代 + 流派）
+    │
     └── 【实战与反馈】
         ├── case-examples.md           实战案例
         ├── quick-diagnosis.md         5 分钟快速诊断
@@ -100,19 +118,7 @@ bazi-skill/
         └── faq.md                     常见问题
 ```
 
-### 📌 即将上线的扩展模块
-
-以下模块正在通过待合并的 PR 添加，合并后将大幅扩展项目覆盖面：
-
-- 📖 **四大经典深度**：穷通宝典调候 120 条 / 子平真诠四神体系 / 神峰通考病药说 / 盲派命理
-- 👩 **女命专论**：传统理论 + 现代视角
-- 💞 **八字合婚**：四维度评分法
-- 📅 **择日学**：建除十二神 / 黄道黑道 / 标准 6 步流程
-- ✍️ **姓名学**：八字喜用 + 五格剖象 + 三才 + 生肖
-- 🌀 **易经总纲**：阴阳 / 五行 / 河图洛书 / 先后天八卦
-- 📚 **工程索引**：术语词典（按拼音）+ 参考书目总索引
-
-查看所有 PR：<https://github.com/fckcg/bazi-skill/pulls>
+> 项目共含 **40+ 个 reference 文件**，覆盖从哲学总纲到实战应用的完整命理体系。
 
 ## 🎯 适用人群
 
