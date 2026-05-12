@@ -69,7 +69,8 @@ bazi-skill/
     ├── dayun-liuyear-interaction.md   大运流年联动规则
     ├── wuxing-tables.md               五行参考表
     ├── dizhi-canggan.md               地支藏干系统
-    ├── tiangan-heke.md                天干合克系统
+    ├── dizhi-xianglun.md             地支详论（四正/四库/四生性质与实战）
+    ├── tiangan-heke.md                天干合克系统（含五合天文学来源）
     ├── xing-chong-he-hai.md           地支刑冲合害破
     ├── nayin-wuxing.md                纳音五行体系
     ├── kongwang.md                    空亡系统
@@ -124,10 +125,11 @@ bazi-skill/
         ├── quick-diagnosis.md         5 分钟快速诊断
         ├── user-feedback-system.md    历史事件校准系统
         ├── mingli-history.md          命理学 1200 年演变史
+        ├── mingli-kexue.md           命理学的科学性讨论与伪术鉴别
         └── faq.md                     常见问题
 ```
 
-> 项目共含 **55 个 reference 文件**，覆盖从哲学总纲到实战应用的完整命理体系。
+> 项目共含 **56 个 reference 文件**，覆盖从哲学总纲到实战应用的完整命理体系。
 
 ## 🎯 适用人群
 

@@ -290,7 +290,8 @@ description: >
 ### 【核心五行与干支】
 - references/wuxing-tables.md — 五行参考表
 - references/dizhi-canggan.md — 地支藏干系统
-- references/tiangan-heke.md — 天干合克系统
+- references/dizhi-xianglun.md — 地支详论（四正/四库/四生的性质/神煞/性格/实战）
+- references/tiangan-heke.md — 天干合克系统（含五合天文学来源 + 河图数理）
 - references/xing-chong-he-hai.md — 地支刑冲合害破系统
 - references/nayin-wuxing.md — 纳音五行体系
 
@@ -346,6 +347,7 @@ description: >
 - references/user-feedback-system.md — 历史事件校准系统
 - references/faq.md — 常见问题
 - references/mingli-history.md — 命理学 1200 年演变史（唐→宋→明→清→民国→当代）
+- references/mingli-kexue.md — 命理学的科学性讨论与伪术鉴别（理性态度 + 骗术识别）
 
 ---
 
