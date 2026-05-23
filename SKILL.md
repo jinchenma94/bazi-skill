@@ -128,59 +128,89 @@ description: >
 
 ## 第二阶段：排盘计算
 
-确认信息后，读取 `references/wuxing-tables.md` 和 `references/shichen-table.md`，进行以下计算：
+**⚠️ 强制要求：必须调用 `bazi-mcp` 进行排盘，禁止自行推算四柱、起运、大运。**
 
-### 1. 年柱
-- 以立春为分界线（非农历正月初一），立春前出生归上一年
-- 立春通常在每年阳历 2 月 3-5 日
-- 年干支按六十甲子循环推算
+LLM 自己推算四柱和大运存在结构性不可靠（节气精确时刻记忆不准、时差换算易错、流派方向有分歧），必须通过专业 MCP 工具计算。
 
-### 2. 月柱
-- 以节气为分界线（非农历月份），每月一节：
-  - 立春→寅月，惊蛰→卯月，清明→辰月，立夏→巳月
-  - 芒种→午月，小暑→未月，立秋→申月，白露→酉月
-  - 寒露→戌月，立冬→亥月，大雪→子月，小寒→丑月
-- 年上起月法口诀："甲己之年丙作首，乙庚之岁戊为头，丙辛之年寻庚上，丁壬壬寅顺水流，戊癸之年何方觅，甲寅之上好追求。"
+### 排盘工具
 
-### 3. 日柱
-- 需根据万年历查表确定，或用已知的日柱推算法计算
-- 注意夜子时（23:00后）归属次日
+使用 **cantian-ai/bazi-mcp**（https://github.com/cantian-ai/bazi-mcp）提供的 MCP 工具：
 
-### 4. 时柱
-- 根据出生时间确定时辰地支（参考 `references/shichen-table.md`）
-- 根据日上起时法（五鼠遁元）确定天干
+- `mcp__Bazi__getBaziDetail` — 主排盘工具。接受阳历或农历时间 + 性别，返回完整四柱、藏干、十神、大运、流年等
+- `mcp__Bazi__getSolarTimes` — 由八字反查可能的阳历时间（用于校验时辰）
+- `mcp__Bazi__getChineseCalendar` — 查指定日期的农历/节气/干支
 
-### 5. 排出四柱
+### 调用示例
 
-以表格形式呈现：
+```
+mcp__Bazi__getBaziDetail({
+  solarDatetime: "1993-12-20T10:30:00+08:00",
+  gender: 1  // 1=男, 0=女
+})
+```
+
+农历：
+
+```
+mcp__Bazi__getBaziDetail({
+  lunarDatetime: "1993-11-08T10:30:00+08:00",
+  gender: 1
+})
+```
+
+时区一律用 `+08:00`（北京时间）。具体入参以工具 schema 为准，调用前用 `ToolSearch select:mcp__Bazi__getBaziDetail` 查看完整签名。
+
+### 工具不可用时的回退
+
+如果 MCP 工具不可用（未注册或未重启 Claude 加载），可回退用 `scripts/paipan.py` Python 脚本：
+
+```bash
+python3 /Users/a1/.claude/skills/bazi/scripts/paipan.py \
+    --solar 1993-12-20 --time 10:30 --gender 男
+```
+
+但 **优先使用 bazi-mcp**——其库 `lunar-typescript` 由 cantian-ai 维护，节气精度和大运算法是当前社区主流。
+
+### 大运流派
+
+bazi-mcp 默认遵循经典派规则（阳男阴女顺、阴男阳女逆）。如用户使用的软件采用"男统一顺排、女统一逆排"惯例，需在输出时显式说明大运方向是否一致，并按用户偏好调整。
+
+### 必读参考文件
+
+排盘脚本运行后，分析阶段仍需读取：
+- `references/wuxing-tables.md` — 五行、十神、藏干、长生、地支关系等参考表
+- `references/classical-texts.md` — 九本经典典籍的论命规则
+- `references/dayun-rules.md` — 大运/流年分析规则（**不再用于计算，仅用于分析理论**）
+- `references/shichen-table.md` — 时辰对照（用于解读，非计算）
+
+### 排盘呈现格式
+
+把脚本输出的 JSON 整理成以下表格呈现给用户：
+
+### 四柱表
 
 |      | 年柱 | 月柱 | 日柱 | 时柱 |
 |------|------|------|------|------|
-| 天干 |  X   |  X   |  X   |  X   |
-| 地支 |  X   |  X   |  X   |  X   |
-| 十神 |      |      |  —   |      |
-| 藏干 |      |      |      |      |
+| 天干 | pillars.year.gan | pillars.month.gan | **pillars.day.gan** | pillars.time.gan |
+| 地支 | pillars.year.zhi | pillars.month.zhi | pillars.day.zhi | pillars.time.zhi |
+| 十神 | gan_shishen | gan_shishen | —（日主） | gan_shishen |
+| 藏干 | canggan | canggan | canggan | canggan |
+| 藏干十神 | canggan_shishen | canggan_shishen | canggan_shishen | canggan_shishen |
 
-- 十神以日干（日主）为基准计算
-- 藏干展开各支的本气、中气、余气
+### 大运表
 
-### 6. 大运排列
+呈现脚本输出的 `dayun_forward` 或 `dayun_backward`（按经典派或用户偏好选择）：
 
-读取 `references/dayun-rules.md`，计算：
+| 大运 | 年龄 | 干支 | 十神 |
+|------|------|------|------|
+| 小运 | 0 至(起运岁-1) | 月柱 | — |
+| 第一步 | start_age-end_age | ganzhi | （以日干推算） |
+| ... | ... | ... | ... |
 
-1. 确定大运方向：阳年男/阴年女 → 顺排；阴年男/阳年女 → 逆排
-2. 以月柱为基准，按方向依次排列大运干支
-3. 计算起运年龄（从出生日到最近节气天数 ÷ 3）
-4. 排列从起运年龄开始的各步大运（每步管十年）
-
-展示格式：
-
-| 大运序 | 年龄范围 | 干支 |
-|--------|---------|------|
-| 起运前 | X-X岁 | 月柱（小运） |
-| 第一步 | X-X岁 | XX |
-| 第二步 | X-X岁 | XX |
-| ... | ... | ... |
+并说明：
+- 起运精算时长（如"4 年 4 月"）
+- 经典派方向、是否与用户软件一致
+- 当前所处大运（按今年年龄定位）
 
 ---
 
