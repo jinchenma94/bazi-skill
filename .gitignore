@@ -14,3 +14,4 @@ Thumbs.db
 venv/
 env/
 *.zip
+PR_COMMENT.md

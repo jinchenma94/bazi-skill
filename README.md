@@ -203,3 +203,14 @@ ls ~/.openclaw/skills/bazi-fortune/
 - **v3.0（运势健康版）** — 新增 8 维度运势 + 4 维度健康，调用 `scripts/fortune_health.py` 确定性计算
 - **v2.0（极简版）** — 4 字段输入，无交互，立即出结果
 - **v1.0（交互版）** — 原 jinchenma94/bazi-skill 风格，分步询问
+
+## Fork 与 PR 状态
+
+本仓库为 [jinchenma94/bazi-skill](https://github.com/jinchenma94/bazi-skill) 的 fork，v3.0 已提交 PR：
+
+- **PR #20**: <https://github.com/jinchenma94/bazi-skill/pull/20>
+- **状态**: open ✅ / mergeable ✅ / clean ✅ / 0 comments（等 maintainer review）
+- **提交时间**: 2026-06-29
+- **变更量**: +1792 / -232 across 9 files
+
+如果你是 maintainer，可以直接合并。如果你想跟进评论，草稿见本地 `PR_COMMENT.md`（不提交到 repo，避免污染 PR diff）。
