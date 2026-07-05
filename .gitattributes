@@ -1,0 +1,15 @@
+# Force LF for all text files (cross-platform compatibility)
+* text=auto eol=lf
+
+# Shell scripts must be LF
+*.sh text eol=lf
+
+# Python files must be LF
+*.py text eol=lf
+
+# Markdown must be LF
+*.md text eol=lf
+
+# Exclude binary files
+*.zip binary
+*.pyc binary

@@ -1,0 +1,15 @@
+# bazi-fortune skill 依赖
+# 用于四柱八字排盘的天文历法计算
+#
+# 跨平台说明：
+# - Windows: pip install -r requirements.txt
+# - Linux:   需要 gcc + python3-dev (源码编译 sxtwl)
+#   或 pip install lunar-python (纯 Python 替代，跨平台免编译)
+#
+# 版本要求：Python 3.8+
+
+# 主依赖：寿星天文历（精确到秒，节气计算权威）
+sxtwl>=2.0.7
+
+# 备用依赖：纯 Python 实现（无需编译，跨平台）
+# pip install lunar-python
