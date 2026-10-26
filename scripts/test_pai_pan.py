@@ -14,11 +14,20 @@ PY = sys.executable
 
 
 def run_pai(*args):
+    # 子进程强制 UTF-8，父进程也按 UTF-8 解码：
+    # 否则 Windows 下若外部已设 PYTHONIOENCODING=utf-8，子进程输出 UTF-8
+    # 而父进程按 locale(GBK) 解码，会抛 UnicodeDecodeError 让全部用例误报 ERROR。
+    env = dict(os.environ)
+    env["PYTHONIOENCODING"] = "utf-8"
+    env["PYTHONUTF8"] = "1"
     proc = subprocess.run(
         [PY, SCRIPT] + list(args),
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         universal_newlines=True,
+        encoding="utf-8",
+        errors="replace",
+        env=env,
     )
     return proc.returncode, proc.stdout, proc.stderr
 

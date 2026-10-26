@@ -39,6 +39,38 @@ git clone https://github.com/jinchenma94/bazi-skill ~/.claude/skills/bazi
 python3 scripts/pai_pan.py --solar 1990-05-15 --shichen 午 --sex 男
 ```
 
+### Windows / 中文乱码：用 run.sh
+
+Windows 控制台默认 GBK，直接跑会遇到 `## ���` 这类乱码，`python3` 命令也常常不存在。用仓库自带的包装器，强制 UTF-8 并自动定位解释器：
+
+```bash
+scripts/run.sh --solar 1990-05-15 --hour 14:30 --sex 男 --place 杭州
+scripts/run.sh --lunar 1990-04-21 --shichen 午 --sex 女 > 命盘.md
+```
+
+它会依次尝试 `$PYTHON` → `python3` → `python` → `py -3` → DSH 内置运行时，然后以 `PYTHONIOENCODING=utf-8` 执行 `pai_pan.py`，参数与直连完全一致。
+
+### 自检：`scripts/doctor.sh`
+
+排盘不出结果、乱码、或 skill 干脆没被加载时，先跑自检：
+
+```bash
+scripts/run.sh doctor          # 全量（含 11 个回归用例）
+scripts/run.sh doctor --quick  # 跳过用例，秒出结果
+```
+
+| 检查项 | 抓什么 |
+|---|---|
+| 文件完整性 | SKILL.md / 脚本 / 5 份 references 缺失或为空 |
+| front matter | 缺 `name`、缺闭合 `---`、正文标题被吞进头部（skill 静默不加载） |
+| 行尾 | `.sh` 被转成 CRLF（bash 直接崩） |
+| 解释器 | 找不到 Python 3.8+，或命中了 Windows Store 假 python |
+| 编码 | 输出非 UTF-8、含替换字符、两次运行结果不一致 |
+| 回归用例 | 排盘逻辑被改动、黄金值不命中 |
+| 安装形态 | 位置非标准、`.dsh`/`.claude` 侧入口缺失、junction 断了 |
+
+退出码：`0` 全通过，`1` 有 FAIL（技能不可用），`2` 仅 WARN（可用但有风险）。
+
 ## 参考典籍
 
 | 典籍 | 简称 |
