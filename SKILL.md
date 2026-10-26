@@ -22,6 +22,8 @@ description: >
 排盘和分析过程中，需要查阅以下参考文件获取详细规则和表格数据：
 
 - `scripts/pai_pan.py` — 排盘计算脚本（确认信息后必须先跑；四柱/大运/流年以脚本 stdout 为准）
+- `scripts/run.sh` — 上面的包装器：定位解释器 + 强制 UTF-8，Bash 环境优先用它
+- `scripts/doctor.sh` — 自检：文件完整性 / front matter / 行尾 / 解释器 / 编码 / 回归用例 / 安装形态（环境不对劲时先跑它）
 - `references/wuxing-tables.md` — 五行、天干地支、十神、藏干等所有参考表
 - `references/shichen-table.md` — 时辰对照表、日上起时法（五鼠遁元）完整对照
 - `references/dayun-rules.md` — 大运顺逆排规则、起运年龄计算、流年分析规则
@@ -132,12 +134,20 @@ description: >
 
 用户确认信息后，**必须先跑**排盘脚本，四柱、大运、流年、子时、神煞均以脚本 stdout 为准。禁止口算、禁止查记忆中的万年历、禁止自行推日柱/月柱/大运后覆盖脚本结果。
 
+**优先用 `scripts/run.sh`**（自动定位解释器、强制 UTF-8，Windows 控制台不乱码）：
+
 ```bash
-python3 scripts/pai_pan.py --solar 1990-05-15 --hour 12:00 --sex 男 --place 北京
-python3 scripts/pai_pan.py --solar 1990-05-15 --shichen 午 --sex 男
-python3 scripts/pai_pan.py --lunar 1990-04-21 --shichen 午 --sex 男
-python3 scripts/pai_pan.py --solar 1990-05-15 --sex 男
-python3 scripts/pai_pan.py --solar 1990-05-15 --hour 12:00 --sex 男 --deceased-year 2010
+scripts/run.sh --solar 1990-05-15 --hour 12:00 --sex 男 --place 北京
+scripts/run.sh --solar 1990-05-15 --shichen 午 --sex 男
+scripts/run.sh --lunar 1990-04-21 --shichen 午 --sex 男
+scripts/run.sh --solar 1990-05-15 --sex 男
+scripts/run.sh --solar 1990-05-15 --hour 12:00 --sex 男 --deceased-year 2010
+```
+
+`run.sh` 参数与 `pai_pan.py` 完全一致。若必须直连 Python（如无 bash），等价写法：
+
+```bash
+PYTHONIOENCODING=utf-8 python3 scripts/pai_pan.py --solar 1990-05-15 --hour 12:00 --sex 男
 ```
 
 ### 已收集字段 → CLI
@@ -154,7 +164,22 @@ python3 scripts/pai_pan.py --solar 1990-05-15 --hour 12:00 --sex 男 --deceased-
 | 出生地 | `--place …` | 可选；只用于展示和时辰边界警告 |
 | 已故年份 | `--deceased-year YYYY` | Step 8 为已故时必传；流年只列到该年 |
 
-阳历、农历至少要有一个。本机需要 `python3`，无 pip 依赖。
+阳历、农历至少要有一个。本机只需 Python 3.8+，无 pip 依赖。
+
+- **优先跑 `scripts/run.sh`**：自动找 `python3` / `python` / `py -3` / DSH 内置运行时，并设 `PYTHONIOENCODING=utf-8`，避免 Windows 控制台 GBK 乱码。
+- 直连 `pai_pan.py` 时务必带 `PYTHONIOENCODING=utf-8`，或把 stdout 重定向到文件再读。
+- 输出是 UTF-8 Markdown，可直接 `> 命盘.md` 存档。
+
+### 环境异常时先自检
+
+排盘报错（找不到脚本、乱码、`$'\r': command not found`、四柱明显不对）时，先跑自检而不是猜：
+
+```bash
+scripts/run.sh doctor        # 或 scripts/doctor.sh；加 --quick 跳过回归用例
+```
+
+七项检查：文件完整性 → front matter → 行尾 → 解释器 → 排盘输出与编码 → 回归用例 → 安装形态。
+`FAIL>0` 退出码 1（技能不可用），仅 `WARN` 退出码 2（可用但有风险），全通过 0。按 `[FAIL]` 行逐条修，不要绕过。
 
 ### 使用 stdout
 

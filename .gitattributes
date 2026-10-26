@@ -1,0 +1,5 @@
+# 只锁 bash 脚本的行尾：CRLF 的 .sh 在 bash 里会报
+#   "$'\r': command not found" / bad interpreter
+# 其余文件交给 text=auto，避免对上游已有内容做全库归一（那会让 PR 变成几千行噪声）。
+* text=auto
+*.sh text eol=lf
